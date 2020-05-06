@@ -1,2 +1,163 @@
-# graph_street_searcher
-Implemented graph for shortest routes
+# Homework 8
+
+## Discussion 
+
+```
+  JHU to Druid Lake
+  Starting location: -76.6175,39.3296
+  Ending location: -76.6383,39.3206
+
+Total Distance: 8818.5187
+45662: 121.596
+40816: 137.149
+40867:N_CHARLES_ST 318.9
+42002:E_33RD_ST 60.4909
+8344:3200_BLK_N_CHARLES_ST 293.14
+11147:3200_BLK_N_CHARLES_ST 318.96
+39907:ART_MUSEUM_DR 151.623
+48094:UNIT__BLK_ART_MUSEUM_DR 664.997
+43910:ART_MUSEUM_DR 129.551
+46364:WYMAN_PARK_DR 213.639
+26692:2900_BLK_WYMAN_PARK_DR 255.018
+39554:N_HOWARD_ST 42.0276
+26872:200_BLK_W_29TH_ST 136.521
+26712:200_BLK_W_29TH_ST 146.673
+15177:200_BLK_W_29TH_ST 167.427
+11871:200_BLK_W_29TH_ST 230.864
+14691:300_BLK_W_29TH_ST 196.683
+30101:300_BLK_W_29TH_ST 224.608
+5917:300_BLK_W_29TH_ST 123.841
+21125:300_BLK_W_29TH_ST 79.8048
+21194:400_BLK_W_29TH_ST 78.1632
+17656:400_BLK_W_29TH_ST 115.904
+26121:500_BLK_W_29TH_ST 600.366
+14609:2900_BLK_SISSON_ST 480.413
+23569:700_BLK_WYMAN_PARK_DR 284.616
+18109:800_BLK_WYMAN_PARK_DR 394.118
+31600:900_BLK_WYMAN_PARK_DR 281.962
+33121:900_BLK_WYMAN_PARK_DR 39.0298
+34391:1000_BLK_WYMAN_PARK 71.1794
+41471:EAST_DR 1160.95
+43386:UNNAMED_ST 190.654
+41640: 1107.65
+
+Ran with baltimore.streets.txt from -76.6175,39.3296 to -76.6383,39.3206 
+in 1502 ms using 8540 kb memory.
+
+  7-11 to Druid Lake
+  Starting location: -76.6214,39.3212
+  Ending location: -76.6383,39.3206
+
+Total Distance: 5827.3652
+24509:2800_BLK_REMINGTON_AVE 397.423
+14691:300_BLK_W_29TH_ST 196.683
+30101:300_BLK_W_29TH_ST 224.608
+5917:300_BLK_W_29TH_ST 123.841
+21125:300_BLK_W_29TH_ST 79.8048
+21194:400_BLK_W_29TH_ST 78.1632
+17656:400_BLK_W_29TH_ST 115.904
+26121:500_BLK_W_29TH_ST 600.366
+14609:2900_BLK_SISSON_ST 480.413
+23569:700_BLK_WYMAN_PARK_DR 284.616
+18109:800_BLK_WYMAN_PARK_DR 394.118
+31600:900_BLK_WYMAN_PARK_DR 281.962
+33121:900_BLK_WYMAN_PARK_DR 39.0298
+34391:1000_BLK_WYMAN_PARK 71.1794
+41471:EAST_DR 1160.95
+43386:UNNAMED_ST 190.654
+41640: 1107.65
+
+Ran with baltimore.streets.txt from -76.6214,39.3212 to -76.6383,39.3206 
+in 1578 ms using 7474 kb memory.
+
+  Inner Harbor to JHU
+  Starting location: -76.6107,39.2866
+  Ending location: -76.6175,39.3296
+
+Total Distance: 17415.096
+20226:100_BLK_SOUTH_ST 462.642
+48137:UNIT__BLK_SOUTH_ST 163.038
+47386:UNIT__BLK_SOUTH_ST 71.8061
+47419:UNIT__BLK_SOUTH_ST 158.76
+47548:UNIT__BLK_SOUTH_ST 271.099
+47459:UNIT__BLK_GUILFORD_AVE 268.592
+28621:200_BLK_E_FAYETTE_ST 343.863
+33813:100_BLK_N_CALVERT_ST 296.815
+28959:200_BLK_N_CALVERT_ST 134.194
+24432:200_BLK_N_CALVERT_ST 299.369
+23235:300_BLK_N_CALVERT_ST 454.205
+9313:300_BLK_N_CALVERT_ST 147.987
+5947:400_BLK_N_CALVERT_ST 185.357
+30373:100_BLK_ORLEANS_ST 151.147
+31819:100_BLK_ORLEANS_ST 156.75
+36462:400_BLK_SAINT_PAUL_PL 165.177
+33237:500_BLK_SAINT_PAUL_PL 199.955
+42343:SAINT_PAUL_PL 50.1383
+35069:500_BLK_SAINT_PAUL_PL 204.024
+27667:600_BLK_SAINT_PAUL_ST 369.081
+23282:600_BLK_SAINT_PAUL_ST 67.5841
+8359:700_BLK_SAINT_PAUL_ST 63.1906
+31442:700_BLK_SAINT_PAUL_ST 201.99
+22312:700_BLK_SAINT_PAUL_ST 120.044
+24117:800_BLK_SAINT_PAUL_ST 164.639
+2462:800_BLK_SAINT_PAUL_ST 58.6525
+14582:800_BLK_SAINT_PAUL_ST 163.169
+16051:900_BLK_SAINT_PAUL_ST 347.582
+17769:900_BLK_SAINT_PAUL_ST 147.308
+34028:1000_BLK_SAINT_PAUL_ST 159.482
+8766:1000_BLK_SAINT_PAUL_ST 341.452
+1691:1100_BLK_SAINT_PAUL_ST 383.173
+4356:1200_BLK_SAINT_PAUL_ST 386.857
+19656:1300_BLK_SAINT_PAUL_ST 338.907
+40957:SAINT_PAUL_ST 42.1892
+44623:SAINT_PAUL_ST 46.2985
+39136:RAMP 216.46
+43462:I_83___S 338.926
+45367:I_83___S 92.1278
+16316:1500_BLK_I_83___S 454.278
+1200:1600_BLK_I_83___S 57.3892
+23840:1500_BLK_MARYLAND_AVE 64.9908
+40031:I_83___N 118.632
+44529:I_83___N 713.842
+42408:I_83___N 107.957
+43967:I_83___N 1045.4
+42619:RAMP 711.625
+40511:RAMP 384.053
+39297:RAMP 1388.23
+44655:RAMP 216.219
+38759:RAMP 90.4719
+14674:2800_BLK_I_83___S 226.829
+25372:2800_BLK_I_83___S 104.224
+17726:2800_BLK_I_83___S 54.115
+30414:2900_BLK_I_83___S 983.555
+41471:EAST_DR 1160.95
+43386:UNNAMED_ST 190.654
+41640: 1107.65
+
+Ran with baltimore.streets.txt from -76.6107,39.2866 to -76.6383,39.3206
+in 1992 ms using 7384 kb memory.
+```
+
+**Comment on how the memory and times vary
+for the different queries** -- the main question is *why* does it change
+when searching the exact same graph.  Make sure to also report the
+total length (in meters) between the locations, and the names of the
+road segments used. If your program fails to find a path, please
+report this as well, and explain why you think it did not find a path.
+
+
+Answer:
+
+My observation is that although the distances can vary by two to three times, 
+the time are much closer than that, differing by one third or so. And so is space
+requirement. The first run, with smaller distances, even takes more space than
+the much longer distance in the third run.
+
+The time and space requirement is not proportional to the distance because there
+is a randomness/luck with regards to which next possible road is added. The destination
+or a road near it could be added very late and only confirmed as "explored" after being
+updated to a smaller distance many times, eg when all other points are added and
+this one of the last. Since the while loop of confirming the shortest route till each
+point breaks out when that point is explored, time and space depends on how fast that
+point is "explored". But time and space should be roughly proportional to number of updates
+of distances.
